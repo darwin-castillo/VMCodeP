@@ -1,0 +1,22 @@
+LDA total
+LDC 0
+STO
+LDA d
+LDC 7
+STO
+LDA j
+LDC 22
+STO
+LDA david
+LDC 30
+STO
+LDA total
+LOD d
+LOD j
+ADI
+STO
+LDA total
+LOD total
+LOD dj
+ADI
+STO

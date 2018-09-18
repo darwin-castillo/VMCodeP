@@ -1,0 +1,5 @@
+LDA 1
+LOD 2
+LDC 1
+ADI
+STO

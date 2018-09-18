@@ -1,0 +1,28 @@
+LDA  L1
+LOD  1                         ;Cargo el valor de 'x' con posicion de memoria 1
+RDI                            ;Lee el valor entero 'x' con posocion de memoria 1
+LDC  0                         ;Cargo constante 0 con posicion de memoria 0
+LOD  1                         ;Cargo valor del identificador 'x' con posicion de memoria 1
+GRT                            
+FJP  L1
+LDA  2                         Asigna memoria a la variable 'fact' con posicion de memoria 2
+LDC  1                         ;Cargo constante 1 con posicion de memoria 3
+STO                           
+LDA  2                         Asigna memoria a la variable 'fact' con posicion de memoria 2
+LOD  2                         ;Cargo valor del identificador 'fact' con posicion de memoria 2
+LOD  1                         ;Cargo valor del identificador 'x' con posicion de memoria 1
+MPI                            
+STO                           
+LDA  1                         Asigna memoria a la variable 'x' con posicion de memoria 1
+LOD  1                         ;Cargo valor del identificador 'x' con posicion de memoria 1
+LDC  1                         ;Cargo constante 1 con posicion de memoria 3
+SBI                            
+STO                           
+LOD  1                         ;Cargo valor del identificador 'x' con posicion de memoria 1
+LDC  0                         ;Cargo constante 0 con posicion de memoria 0
+EQU                            
+FJP  L3
+LOD  2                         ;Cargo valor del identificador 'fact' con posicion de memoria 2
+WRI                            
+LAB L1
+STP  

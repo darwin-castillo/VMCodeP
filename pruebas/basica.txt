@@ -1,0 +1,5 @@
+LDC 8
+LOD a
+ADI
+LDC 4
+ADI

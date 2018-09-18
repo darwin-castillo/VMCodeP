@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+
+
+
+    <title>Virtual Machine - Codigo P </title>
+ <script type="text/javascript" language="javascript" src="js/principal.js"></script>
+      <script type="text/javascript" language="javascript" src="js/lectura.js"></script>
+        <script type="text/javascript" language="javascript" src="js/instrucciones.js"></script>
+         
+
+            <link rel="stylesheet" href="bootstrap.min.css" >
+    <style>
+
+    #salida{
+    position: absolute;
+    overflow-y: scroll;
+    height: 95%;
+   
+}
+
+h2{
+   color:#069;
+}
+
+
+
+/*
+#ejecutar{
+   display: none;
+};
+
+#debug{
+  display: none;
+};
+*/
+/* The Modal (background) */
+</style>
+<script type="text/javascript">
+function ejecut(){
+console.log("ejecutando...");
+ejecutar();
+}
+
+function debugg(){
+debug();
+}
+</script>
+</head>
+
+<body>
+<nav class="navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+  <h2>Virtual Machine | Codigo-P</h2>
+  <form class="form-inline">
+  <button id="ejecutar" onclick="ejecut()" type="button" class="btn btn-outline-success">Ejecutar</button>
+  <button id="debug" onclick="debugg()" type="button" class="btn btn-outline-success">Paso</button>
+  <input type="file" name="file_reader" id="file_reader">
+</form>
+</nav>
+ 
+<div class="container">
+<div class="row">
+
+
+ <div class="col-6 col-md-4"><p id="salida"></p></div>
+  <div class="col-6 col-md-4">
+<div class="alert alert-primary" role="alert">
+    <p id="pila"></p>
+</div>
+    <div class="alert alert-success" role="alert">
+    <p id="memoria"></p>
+    </div>
+  </div>
+  <div class="col-6 col-md-4"><p id="codigo"></p></div>
+   
+
+</div>
+
+
+
+     
+ </div>
+ 
+</div>
+ 
+ <script src="js/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
